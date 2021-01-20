@@ -1,4 +1,4 @@
-This includes some examples for creating mnist data using anomaly detection algorithms. It is probably never a good idea, to use this, to generate new stuff, but I think it is quite interresting in helping to understand your anomaly detection algorithm.
+This includes some examples for creating mnist data using anomaly detection algorithms. It is probably never a good idea, to use this, to generate new stuff, but I think it is quite interresting in helping to understand your anomaly detection algorithm. Why should this work? When your anomaly detection algorithm is good, it should be able to exclude (most) other events. So when you search for an event that is normal, it should be more likely to be of the same type as your input.
 The only task here, is to generate a picture of a 7 with a neglicible anomaly. To do this, I use an evolutionary process and different anomaly detection algorithms.
 
 #cae 
