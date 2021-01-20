@@ -1,0 +1,10 @@
+This is a git that I use to collect some ideas on how to combine generative tasks with anomalous code
+
+#driving_school
+
+A simple codeset that tries to reproduce motion. After training on a set of vectors describing a motion (x(t)), the network is tasked with finding the next valid timestep. This it does by searching for the least anomalous one, with the definition of anomaly defined in training. This code is not very powerful, since I did not want to implement the whole tensorflow environment for this simple task, and thus not able to understand complex patterns. But circles work quite well, and by using delta_x you should be able to implement lines too
+
+
+#not_so_weird
+
+A more complicated codeset, that tries to evaluate anomaly detection algorithms by their generative power. See the Readme there for a more thorough explanation
