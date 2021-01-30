@@ -1,0 +1,12 @@
+This includes some examples for creating mnist data using anomaly detection algorithms. It is probably never a good idea, to use this, to generate new stuff, but I think it is quite interresting in helping to understand your anomaly detection algorithm. Why should this work? When your anomaly detection algorithm is good, it should be able to exclude (most) other events. So when you search for an event that is normal, it should be more likely to be of the same type as your input.
+The only task here, is to generate a picture of a 7 with a neglicible anomaly. To do this, I use an evolutionary process and different anomaly detection algorithms.
+
+#cae 
+
+Convolutional AutoEncoder migth be the most obvious choice for an anomaly detection algorithm, so in this folder I try using it to generate new code. The AE is just a copy of a keras example code (sligthly modified), but it results in the best possible reconstruction beeing the 0 Image. To combat this, I modify the loss to be divergent (capped obviously) for the Image going to zero. But as you see in the Images, this does not make anything remotely 7 like appear
+
+
+#oneoff
+
+Oneoff networks (a modification of SVMs, see my masters thesis) are now my favorite tool for anomaly detection. And as you see in those Images, they are still not good, but you see at least a 7 like structure appear (assuming I dont just want to see it). Oneoff networks have a structure, at which you can improve on them by retraining an combining them. I do this here up to 5 times, but I do not see any real difference. Also sadly I could not include the models here, as github does not allow me to upload them, but you can train your own here: +
+https://colab.research.google.com/drive/1P57E786burbP8ragorj9iRZkvmE0VmzT?usp=sharing
